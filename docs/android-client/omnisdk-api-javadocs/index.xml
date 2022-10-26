@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seayoo 文档中心 – OmniSDK API JavaDocs</title>
+    <link>/docs/android-client/omnisdk-api-javadocs.html</link>
+    <description>Recent content in OmniSDK API JavaDocs on Seayoo 文档中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/android-client/omnisdk-api-javadocs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

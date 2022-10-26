@@ -1,0 +1,34 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seayoo 文档中心 – Introduction</title>
+    <link>/docs/introduction.html</link>
+    <description>Recent content in Introduction on Seayoo 文档中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 流程介绍</title>
+      <link>/docs/introduction/work-flow.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/introduction/work-flow.html</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;登录流程&#34;&gt;登录流程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/login.png&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;支付流程&#34;&gt;支付流程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/payment.png&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

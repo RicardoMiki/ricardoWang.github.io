@@ -1,0 +1,783 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seayoo 文档中心 – OmniSDK Android 接入指南</title>
+    <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97.html</link>
+    <description>Recent content in OmniSDK Android 接入指南 on Seayoo 文档中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Android 知识快速指南及 Javadoc 阅读</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/android-%E7%9F%A5%E8%AF%86%E5%BF%AB%E9%80%9F%E6%8C%87%E5%8D%97%E5%8F%8A-javadoc-%E9%98%85%E8%AF%BB.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/android-%E7%9F%A5%E8%AF%86%E5%BF%AB%E9%80%9F%E6%8C%87%E5%8D%97%E5%8F%8A-javadoc-%E9%98%85%E8%AF%BB.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;💯 Android Studio 新手入门&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.android.com/studio/intro?hl=zh-cn&#34;&gt;入门文档与视频&lt;/a&gt;，建议花十分钟优先阅读。&lt;/p&gt;
+&lt;h1 id=&#34;android-studio-官方编译器简单说明&#34;&gt;Android Studio 官方编译器简单说明&lt;/h1&gt;
+&lt;h2 id=&#34;主界面说明&#34;&gt;主界面说明&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/mainpage.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编译界面说明&#34;&gt;编译界面说明&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/compilepage.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-在编译器上查看api信息&#34;&gt;📌 在编译器上查看API信息&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/compileapi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/compileapi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;如何阅读-omnisdk-javadoc&#34;&gt;如何阅读 OmniSDK &lt;strong&gt;Javadoc&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;javadoc-首页面说明&#34;&gt;Javadoc 首页面说明&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/javadoc.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-javadoc-方法页面说明&#34;&gt;📌 Javadoc &lt;strong&gt;方法页面说明&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/javadocmethodpage.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方法查看&#34;&gt;方法查看&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/javadocmethod.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据结构查看&#34;&gt;数据结构查看&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/javadocparams.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;搜索&#34;&gt;搜索&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;类名搜索
+&lt;img src=&#34;./images/classsearch.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;全局搜索（不支持注释内容）
+&lt;img src=&#34;./images/gloabalsearch.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;如何打开-android-studio-工程&#34;&gt;如何打开 Android Studio 工程&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;使用游戏引擎导出 Android Studio 结构的工程目录（示例方便起见，文件夹名就叫“android-demo”）。&lt;/li&gt;
+&lt;li&gt;如图所示，包含 “settings.gradle”、“gradle.properties”等文件的“android-demo”文件夹即是工程目录。
+&lt;img src=&#34;./images/projectfolder.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;启动 Android Studio（如未安装，官网下载）&lt;/li&gt;
+&lt;li&gt;菜单栏操作，“File- Open&amp;hellip;” 找到引擎导致的工程目录android-demo， 选中文件夹（不是里面的内容）即可打开工程。
+&lt;img src=&#34;./images/opendemo.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;等待工程依赖资源下载完成（保证外网访问、最好有必要的科学上网环境）
+&lt;img src=&#34;./images/gradlesync.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;-如何使用api开发&#34;&gt;📌 如何使用API开发&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;OmniSDK 已经更新对应 API 的使用示例，游戏项目可以直接复制后再修改。&lt;/li&gt;
+&lt;li&gt;Android 官方目前推荐使用 Kotlin，支持 Kotlin\Java 互调、混编，游戏项目可以自由选择。&lt;/li&gt;
+&lt;li&gt;Kotlin 在语法更友好、现代化；目前 OmniSDK 使用 Kotlin，我们推荐游戏项目在接入SDK时使用 Kotlin。&lt;/li&gt;
+&lt;li&gt;Android 官方的一些小教程。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;java-开发&#34;&gt;Java 开发&lt;/h2&gt;
+&lt;h3 id=&#34;创建一个java类如图示&#34;&gt;创建一个Java类，如图示：&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;./images/createclass.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;代码开发示例&#34;&gt;代码开发示例&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;./imgages/../images/writecode.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;kotlin-开发&#34;&gt;Kotlin 开发&lt;/h2&gt;
+&lt;h3 id=&#34;增加-kotlin-依赖配置官方教程httpsdeveloperandroidcomkotlinadd-kotlin&#34;&gt;增加 Kotlin 依赖配置（&lt;a href=&#34;https://developer.android.com/kotlin/add-kotlin&#34;&gt;官方教程&lt;/a&gt;）&lt;/h3&gt;
+&lt;h4 id=&#34;在工程根目录root-level-buildgradle-添加如下配置如图示&#34;&gt;在工程根目录(root-level) build.gradle 添加如下配置（如图示）：&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;buildscript&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// kotlin 版本号
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000&#34;&gt;ext&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;kotlin_version&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1.4.32&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;repositories&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;google&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;jcenter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// kotlin 插件
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;classpath&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;./imgages/../images/gradlebuildcnf.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;在工程主目录app-level-buildgradle-添加如下配置如图示&#34;&gt;在工程主目录(app-level) build.gradle 添加如下配置（如图示）：&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 引入 kotlin
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;plugin:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;kotlin-android&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;plugin:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;kotlin-parcelize&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;plugin:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;kotlin-kapt&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;implementation&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;./images/maingradlecnf.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;创建-kotlin-类&#34;&gt;创建 Kotlin 类&lt;/h3&gt;
+&lt;h4 id=&#34;如图示创建-gametransferomnisdk类型-object代表单例&#34;&gt;如图示，创建 GameTransferOmniSDK（类型 Object，代表单例）&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;./images/gametransferomnisdk.png&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;./images/gameactivity.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;-如何排查问题&#34;&gt;💯 如何排查问题&lt;/h1&gt;
+&lt;h2 id=&#34;debug-运行时可以直接从运行日志窗口定位crash内容&#34;&gt;Debug 运行时，可以直接从“运行日志窗口”定位Crash内容&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/debugcrash.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;抓取日志请记住问题发生时间方便排查&#34;&gt;抓取日志（请记住问题发生时间，方便排查）&lt;/h2&gt;
+&lt;h3 id=&#34;android抓取日志httpswwwcnblogscommy-testing-lifearticles12582002html&#34;&gt;&lt;a href=&#34;https://www.cnblogs.com/my-testing-life/articles/12582002.html&#34;&gt;android抓取日志&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;logcatviewerhttpsgithubcomfatangarelogcatviewer&#34;&gt;&lt;a href=&#34;https://github.com/fatangare/LogcatViewer&#34;&gt;LogcatViewer&lt;/a&gt;&lt;/h3&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: app level</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/app-level.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/app-level.html</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;说明&#34;&gt;说明&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;游戏在 app-level 接入 &lt;code&gt;OmniSDK&lt;/code&gt;，遵循本章节描述的接入方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;app-level&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主工程目录，通常为 GameActivity 所在的目录；&lt;/li&gt;
+&lt;li&gt;所在目录的 &lt;code&gt;build.gradle&lt;/code&gt; 声明了 &lt;code&gt;apply plugin: &#39;com.android.application&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;libs-level&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;libs 级别的工程目录；&lt;/li&gt;
+&lt;li&gt;所在目录的 &lt;code&gt;build.gradle&lt;/code&gt; 声明了 &lt;code&gt;apply plugin: &#39;com.android.library&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果游戏要采用 libs-level 方式接入，参考 &lt;a href=&#34;../doc/GradleLibsLevel.md&#34;&gt;libs-level 方式接入&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;开始集成&#34;&gt;开始集成&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将 &lt;strong&gt;&lt;font color=red&gt;shiyou 文件夹&lt;/font&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;font color=red&gt;kssyOmniPlugin.gradle&lt;/font&gt;&lt;/strong&gt; 文件拷贝到游戏工程根目录 &lt;strong&gt;root-level&lt;/strong&gt; 下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/kssy%E7%9B%AE%E5%BD%95copy.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;buildscript&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;repositories&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// OmniSDK 仓库
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://maven.shiyou.kingsoft.com/repository/public/&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 华为插件 仓库，本配置不影响其他渠道。
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://developer.huawei.com/repo/&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;classpath&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;com.android.tools.build:gradle:4.2.1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 建议版本 或 游戏引擎提供的最新高版本
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// OmniSDK 编译插件
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;classpath&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;com.kingsoft.shiyou.omnisdk.build:plugin:3.2.0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// replace latest-version
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// file: gradle/wrapper/gradle-wrapper.properties &amp;gt; distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-all.zip
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;app-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniPlugin.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// OmniSDK 编译插件，必须在(app-level)级别添加
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 读取密钥（密钥配置为参考）
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Properties&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;load&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FileInputStream&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;rootProject&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;signing.properties&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;))))&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;compileSdkVersion&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;31&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 与 targetSdkVersion 相同
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// buildToolsVersion &amp;#34;31.0.0&amp;#34; // 无如必要，不需要指定此版本号，保持最新即可
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;defaultConfig&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// applicationId &amp;#34;游戏包名&amp;#34; // 本行删除，不要自己配置，编译脚本会自动读取 project_config.json#package_name。
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 包名必须 project_config.json#package_name、OmniSDK后台、相关第三方SDK后台，保持一致；
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 变更包名时需要同步所有地方的包名及相应申请的参数。
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;minSdkVersion&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 最低兼容API，Android 5.0
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;targetSdkVersion&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;31&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Android 12
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 开启 Java8 兼容性编译（必选）
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000&#34;&gt;compileOptions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;sourceCompatibility&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JavaVersion&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;VERSION_1_8&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;targetCompatibility&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JavaVersion&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;VERSION_1_8&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;signingConfigs&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 签名配置，为保证安全，密钥密码不要明文配置在这里，而是通过文件读取方式配置。比如 signing.properties
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;release&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;storeFile&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${your-path}/signing.properties&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;storePassword&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;storePassword&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;keyAlias&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;keyAlias&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;keyPassword&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;keyPassword&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;buildTypes&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;release&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;minifyEnabled&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 开启代码混淆：保护代码、减少包大小
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// multiDexKeepProguard = file(&amp;#34;multidex-config.pro&amp;#34;) // 分包配置，如果需要
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#000&#34;&gt;proguardFiles&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getDefaultProguardFile&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;proguard-android-optimize.txt&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;),&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;proguard-rules.pro&amp;#39;&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;signingConfig&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingConfigs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;release&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// release包签名
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击IDE &lt;strong&gt;&lt;code&gt;Sync Project with Gradle Files&lt;/code&gt;&lt;/strong&gt; (🐘)按钮，进行依赖同步与初始化。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;或 &lt;strong&gt;File &amp;gt; Sync Project with Gradle Files&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;或 &lt;strong&gt;Tools &amp;gt; Android &amp;gt; Sync Project with Gradle Files&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;命令行同步指令已被Gradle官方删除，可以执行 &lt;code&gt;gradlew aDebug&lt;/code&gt; 代替。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;依赖库同步成功后，命令行执行 &lt;strong&gt;&lt;code&gt;gradlew omniPreChannels&lt;/code&gt;&lt;/strong&gt;，会自动在 &lt;strong&gt;root-level&lt;/strong&gt; 目录生成两个文件 &lt;em&gt;&lt;strong&gt;kssyOmniChannels.gradle&lt;/strong&gt;&lt;/em&gt; 和 &lt;em&gt;&lt;strong&gt;kssyOmniChannelsRoot.gradle&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt;，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 引入渠道仓库配置
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniChannelsRoot.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;buildscript&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;app-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniPlugin.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 编译插件，必须在(app-level)级别添加
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniChannels.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 导入渠道相关依赖
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AndroidX 配置（如果编译有问题）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;检查 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;gradle.properties&lt;/strong&gt;&lt;/em&gt; 文件中是否有如下内容，没有则添加或去掉注释形式。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-properties&#34; data-lang=&#34;properties&#34;&gt;android.useAndroidX=true
+android.enableJetifier=true
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重复执行步骤【4】的同步操作，同步完成后即可往下开发。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;demo-参考&#34;&gt;Demo 参考&lt;/h1&gt;
+&lt;h2 id=&#34;app-level-demo-地址&#34;&gt;App-level Demo 地址&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/kingsoftgames/omnisdk-android-demo/tree/master&#34;&gt;App-level Demo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;如何运行&#34;&gt;如何运行&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;通过 &lt;a href=&#34;https://developer.android.com/studio/intro?hl=zh-cn&#34;&gt;Android Studio&lt;/a&gt; 打开 Demo 工程；&lt;/li&gt;
+&lt;li&gt;请将从 &lt;code&gt;OmniSDK&lt;/code&gt; 申请到 &lt;code&gt;shiyou&lt;/code&gt; 文件夹替换 Demo 根目录下 &lt;code&gt;shiyou&lt;/code&gt; 文件夹；&lt;/li&gt;
+&lt;li&gt;命令行执行 &lt;code&gt;gradlew omniPreChannels&lt;/code&gt;，更新文件 &lt;em&gt;&lt;strong&gt;kssyOmniChannels.gradle&lt;/strong&gt;&lt;/em&gt; 和 &lt;em&gt;&lt;strong&gt;kssyOmniChannelsRoot.gradle&lt;/strong&gt;&lt;/em&gt;；&lt;/li&gt;
+&lt;li&gt;配置 &lt;code&gt;app/build.gradle&lt;/code&gt; 下的签名配置节点，将其修改成自己签名信息。&lt;/li&gt;
+&lt;li&gt;点击IDE &lt;strong&gt;Sync Project with Gradle Files&lt;/strong&gt; (🐘)按钮，进行依赖同步与初始化。
+&lt;ul&gt;
+&lt;li&gt;或 &lt;code&gt;File &amp;gt; Sync Project with Gradle Files&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;或 &lt;code&gt;Tools &amp;gt; Android &amp;gt; Sync Project with Gradle Files&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;运行 Demo 。&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: libs level</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/libs-level.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/libs-level.html</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;说明&#34;&gt;说明&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;游戏在 libs-level 接入 &lt;code&gt;OmniSDK&lt;/code&gt;，遵循本章节描述的接入方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;app-level&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主工程目录，通常为 GameActivity 所在的目录；&lt;/li&gt;
+&lt;li&gt;所在目录的 &lt;code&gt;build.gradle&lt;/code&gt; 声明了 &lt;code&gt;apply plugin: &#39;com.android.application&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;libs-level&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;libs 级别的工程目录；&lt;/li&gt;
+&lt;li&gt;所在目录的 &lt;code&gt;build.gradle&lt;/code&gt; 声明了 &lt;code&gt;apply plugin: &#39;com.android.library&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果游戏要采用 app-level 方式接入，参考 &lt;a href=&#34;../doc/GradleAppLevel.md&#34;&gt;app-level 方式接入&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;开始集成&#34;&gt;开始集成&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将 &lt;strong&gt;&lt;font color=red&gt;shiyou 文件夹&lt;/font&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;font color=red&gt;kssyOmniPlugin.gradle&lt;/font&gt;&lt;/strong&gt; 文件拷贝到游戏工程根目录 &lt;strong&gt;root-level&lt;/strong&gt; 下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/kssy%E7%9B%AE%E5%BD%95copylibs.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;buildscript&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;repositories&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// OmniSDK 仓库
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://maven.shiyou.kingsoft.com/repository/public/&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 华为插件 仓库，本配置不影响其他渠道。
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://developer.huawei.com/repo/&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;classpath&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;com.android.tools.build:gradle:4.2.1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 建议版本 或 游戏引擎提供的最新高版本
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// OmniSDK 编译插件
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;classpath&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;com.kingsoft.shiyou.omnisdk.build:plugin:3.2.0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// replace latest-version
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// file: gradle/wrapper/gradle-wrapper.properties &amp;gt; distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-all.zip
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;app-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniPlugin.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// OmniSDK 编译插件，必须在(app-level)级别添加
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 读取密钥（密钥配置为参考）
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Properties&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;load&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FileInputStream&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;rootProject&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;signing.properties&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;))))&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;compileSdkVersion&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;31&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 与 targetSdkVersion 相同
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// buildToolsVersion &amp;#34;31.0.0&amp;#34; // 无如必要，不需要指定此版本号，保持最新即可
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;defaultConfig&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// applicationId &amp;#34;游戏包名&amp;#34; // 本行删除，不要自己配置，编译脚本会自动读取 project_config.json#package_name。
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 包名必须 project_config.json#package_name、OmniSDK后台、相关第三方SDK后台，保持一致；
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 变更包名时需要同步所有地方的包名及相应申请的参数。
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;minSdkVersion&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 最低兼容API，Android 5.0
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;targetSdkVersion&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;31&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Android 12
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 开启 Java8 兼容性编译（必选）
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000&#34;&gt;compileOptions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;sourceCompatibility&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JavaVersion&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;VERSION_1_8&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;targetCompatibility&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JavaVersion&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;VERSION_1_8&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;signingConfigs&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 签名配置，为保证安全，密钥密码不要明文配置在这里，而是通过文件读取方式配置。比如 signing.properties
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;release&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;storeFile&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${your-path}/signing.properties&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;storePassword&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;storePassword&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;keyAlias&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;keyAlias&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;keyPassword&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingP&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;keyPassword&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;buildTypes&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;release&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;minifyEnabled&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 开启代码混淆：保护代码、减少包大小
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// multiDexKeepProguard = file(&amp;#34;multidex-config.pro&amp;#34;) // 分包配置，如果需要
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#000&#34;&gt;proguardFiles&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getDefaultProguardFile&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;proguard-android-optimize.txt&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;),&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;proguard-rules.pro&amp;#39;&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;signingConfig&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;signingConfigs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;release&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// release包签名
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击IDE &lt;strong&gt;&lt;code&gt;Sync Project with Gradle Files&lt;/code&gt;&lt;/strong&gt; (🐘)按钮，进行依赖同步与初始化。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;或 &lt;strong&gt;File &amp;gt; Sync Project with Gradle Files&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;或 &lt;strong&gt;Tools &amp;gt; Android &amp;gt; Sync Project with Gradle Files&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;命令行同步指令已被Gradle官方删除，可以执行 &lt;code&gt;gradlew aDebug&lt;/code&gt; 代替。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;依赖库同步成功后，命令行执行 &lt;strong&gt;&lt;code&gt;gradlew omniPreChannels -PpreType=libs&lt;/code&gt;&lt;/strong&gt;，会自动在 &lt;strong&gt;root-level&lt;/strong&gt; 目录生成三个文件 &lt;em&gt;&lt;strong&gt;kssyOmniChannels.gradle&lt;/strong&gt;&lt;/em&gt;、&lt;em&gt;&lt;strong&gt;kssyOmniChannelsApp.gradle&lt;/strong&gt;&lt;/em&gt;、&lt;em&gt;&lt;strong&gt;kssyOmniChannelsRoot.gradle&lt;/strong&gt;&lt;/em&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt;，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 引入渠道仓库配置
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniChannelsRoot.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;buildscript&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;app-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniPlugin.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 编译插件，必须在(app-level)级别添加
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniChannelsApp.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 导入渠道相关依赖，app-level 配置
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;libs-level(仅代码接入的libs)&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;build.gradle&lt;/strong&gt;&lt;/em&gt; ，添加如下配置:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-groovy&#34; data-lang=&#34;groovy&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f57900&#34;&gt;from:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${rootProject.rootDir}/kssyOmniChannels.gradle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 导入渠道相关依赖，libs-level 配置
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AndroidX 配置（如果编译有问题）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;检查 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;em&gt;&lt;strong&gt;gradle.properties&lt;/strong&gt;&lt;/em&gt; 文件中是否有如下内容，没有则添加或去掉注释形式。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-properties&#34; data-lang=&#34;properties&#34;&gt;android.useAndroidX=true
+android.enableJetifier=true
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重复执行步骤【4】的同步操作，同步完成后即可往下开发。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;demo-参考&#34;&gt;Demo 参考&lt;/h1&gt;
+&lt;h2 id=&#34;libs-level-demo-地址&#34;&gt;Libs-level Demo 地址&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/kingsoftgames/omnisdk-android-demo/tree/libs-level&#34;&gt;Libs-level Demo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;如何运行&#34;&gt;如何运行&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;通过 &lt;a href=&#34;https://developer.android.com/studio/intro?hl=zh-cn&#34;&gt;Android Studio&lt;/a&gt; 打开 Demo 工程；&lt;/li&gt;
+&lt;li&gt;请将从 &lt;code&gt;OmniSDK&lt;/code&gt; 申请到 &lt;code&gt;shiyou&lt;/code&gt; 文件夹替换 Demo 根目录下 &lt;code&gt;shiyou&lt;/code&gt; 文件夹；&lt;/li&gt;
+&lt;li&gt;命令行执行 &lt;code&gt;gradlew omniPreChannels -PpreType=libs&lt;/code&gt;，更新文件 &lt;em&gt;&lt;strong&gt;kssyOmniChannels.gradle&lt;/strong&gt;&lt;/em&gt;、&lt;em&gt;&lt;strong&gt;kssyOmniChannelsApp.gradle&lt;/strong&gt;&lt;/em&gt;、&lt;em&gt;&lt;strong&gt;kssyOmniChannelsRoot.gradle&lt;/strong&gt;&lt;/em&gt;；&lt;/li&gt;
+&lt;li&gt;配置 &lt;code&gt;app/build.gradle&lt;/code&gt; 下的签名配置节点，将其修改成自己签名信息。&lt;/li&gt;
+&lt;li&gt;点击IDE &lt;strong&gt;Sync Project with Gradle Files&lt;/strong&gt; (🐘)按钮，进行依赖同步与初始化。
+&lt;ul&gt;
+&lt;li&gt;或 &lt;code&gt;File &amp;gt; Sync Project with Gradle Files&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;或 &lt;code&gt;Tools &amp;gt; Android &amp;gt; Sync Project with Gradle Files&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;运行 Demo 。&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OmniSDK 接入流程参考</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B%E5%8F%82%E8%80%83.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B%E5%8F%82%E8%80%83.html</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;流程&#34;&gt;流程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;发送接入需求邮件
+发送需求邮件给 &lt;a href=&#34;mailto:zhangchen1@kingsoft.com&#34;&gt;zhangchen1@kingsoft.com&lt;/a&gt;，抄送 &lt;a href=&#34;mailto:liuyinliang1@kingsoft.com&#34;&gt;liuyinliang1@kingsoft.com&lt;/a&gt;。邮件内容写明游戏名称、厂商、计划发行的渠道、项目联系人、发行平台(IOS | Android)等信息，如果有近期上线计划，也请写明计划发布日期。
+SDK 这边接收到需求邮件会在后台创建游戏相关信息，然后把分配好的 APP_ID 和 APP_SECRET_KEY 随邮件回复。&lt;/li&gt;
+&lt;li&gt;项目负责人拉飞书沟通群
+初始先拉入群的同学：刘银亮、张晨，后续在由双方邀请必要的同学进来。&lt;/li&gt;
+&lt;li&gt;渠道参数确定
+项目负责人联系 SDK 研发 （刘银亮）创建调试用发布计划，这一步需要提供渠道参数。
+如果参数运营同学可以自主搞定，也可以发邮件给 &lt;a href=&#34;mailto:liuyinliang1@kingsoft.com&#34;&gt;liuyinliang1@kingsoft.com&lt;/a&gt; 来申请后台的权限。&lt;/li&gt;
+&lt;li&gt;获取 OmniSDK 接入包
+项目负责人联系 OmniSDK 赵伟岩 获取 OmniSDK 的渠道接入包&lt;/li&gt;
+&lt;li&gt;研发代码接入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;接入文档&#34;&gt;接入文档：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/&#34;&gt;Android 在线接入文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ios-client/apple-%E5%BC%80%E5%8F%91%E8%80%85%E8%B4%A6%E6%88%B7%E8%AF%B4%E6%98%8E/&#34;&gt;IOS 在线接入文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OmniSDK 账号 API</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1-api.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1-api.html</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;描述&#34;&gt;描述&lt;/h1&gt;
+&lt;h2 id=&#34;接入提示&#34;&gt;接入提示&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;游戏没有角色这一特征，可以不用接入，除非渠道强制要求。&lt;/li&gt;
+&lt;li&gt;游戏发行的渠道里，都没有强制要接入，可以不用接入。&lt;/li&gt;
+&lt;li&gt;必接接口请查看 &lt;a href=&#34;#%E5%8A%9F%E8%83%BD%E4%B8%8Eapi%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3&#34;&gt;功能与API接口文档&lt;/a&gt; 的接口注释；如果游戏没有对应场景，请与渠道直接商量。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;渠道列表&#34;&gt;渠道列表&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;渠道名&lt;/th&gt;
+&lt;th&gt;功能状态&lt;/th&gt;
+&lt;th&gt;是否强制&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;oppo&lt;/td&gt;
+&lt;td&gt;已移除&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transsion（传音）&lt;/td&gt;
+&lt;td&gt;新增&lt;/td&gt;
+&lt;td&gt;必接（与渠道合作的游戏）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;功能与api接口文档&#34;&gt;功能与API接口文档&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../api/html/-omni-s-d-k/com.kingsoft.shiyou.omnisdk.api.interfaces/-i-data-monitor/index.html&#34;&gt;DataMonitor API Javadoc&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OmniSDK 账号 API</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E8%B4%A6%E5%8F%B7-api.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E8%B4%A6%E5%8F%B7-api.html</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;描述&#34;&gt;描述&lt;/h1&gt;
+&lt;h2 id=&#34;账号接入&#34;&gt;账号接入&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OmniSDK 提供默认账号UI界面，包含完整的账号处理逻辑，可以减少接入成本。目前只提供一套定制UI风格。&lt;/li&gt;
+&lt;li&gt;游戏项目也可以通过【账号API】自定义账号UI界面，以便统一UI风格。
+&lt;ul&gt;
+&lt;li&gt;接入的账号类型包含游客类型时，&lt;strong&gt;账号绑定&lt;/strong&gt; 逻辑最好实现，防止用户卸载重装后数据丢失。&lt;/li&gt;
+&lt;li&gt;如有游客账号类型，游戏最好引导玩家主动绑定账号，防止数据丢失。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自定义ui界面&#34;&gt;自定义UI界面&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;账号类型使用 &lt;a href=&#34;../api/html/-omni-s-d-k/com.kingsoft.shiyou.omnisdk.api.entity/-account-type/index.html&#34;&gt;AccountType&lt;/a&gt; 传递。&lt;/li&gt;
+&lt;li&gt;渠道账号体系的模式：分为无账号、有账号（禁止其他账号、允许其他账号）。
+&lt;ul&gt;
+&lt;li&gt;比如游戏项目需要分发：官方渠道、渠道a（无账号）、渠道b（有账号-禁止其他）、渠道c（有账号-允许其他），默认要有Facebook、Google账号类型。最终UI效果：
+&lt;ul&gt;
+&lt;li&gt;【官方渠道】显示Facebook、Google；&lt;/li&gt;
+&lt;li&gt;【渠道a】显示Facebook、Google；&lt;/li&gt;
+&lt;li&gt;【渠道b】只显示渠道账号；&lt;/li&gt;
+&lt;li&gt;【渠道c】显示渠道账号、Facebook、Google。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;游戏项目自定义账号UI界面时，为一次编写适配不同渠道的账号显示要求，需要通过 &lt;a href=&#34;../api/html/-omni-s-d-k/com.kingsoft.shiyou.omnisdk.api.interfaces/-i-account/get-account-mode.html&#34;&gt;getAccountMode&lt;/a&gt; 处理不同渠道的账号体系模式。在此过程不需要判断或知道具体是哪个渠道。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;静默登录&#34;&gt;静默登录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;用户已登录并且未登出，下次登录时，如果是同一账号类型，将进行静默登录（token有效期内）。&lt;/li&gt;
+&lt;li&gt;与上次登录的账号类型不同时，将是一次新登录。&lt;/li&gt;
+&lt;li&gt;自定义账号UI界面时，建议根据上次用户信息返回的账号类型（可保存），在下次进行登录时显示“上次登录账号”或直接静默登录，提供更好的用户体验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;功能与api接口文档&#34;&gt;功能与API接口文档&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../api/html/-omni-s-d-k/com.kingsoft.shiyou.omnisdk.api.interfaces/-i-account/index.html&#34;&gt;Account API Javadoc&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OmniSDK 通用编译与CPS标签包</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E9%80%9A%E7%94%A8%E7%BC%96%E8%AF%91%E4%B8%8Ecps%E6%A0%87%E7%AD%BE%E5%8C%85.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/omnisdk-%E9%80%9A%E7%94%A8%E7%BC%96%E8%AF%91%E4%B8%8Ecps%E6%A0%87%E7%AD%BE%E5%8C%85.html</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;版本&#34;&gt;版本&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;请确保 KSSYOmniPlugin 使用&lt;a href=&#34;https://d7n9vj8ces.feishu.cn/docs/doccn9IsNVuJKFHQb1BqbxYHcdd#HBROJv&#34;&gt;最新版本&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;术语&#34;&gt;术语&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;release: release包，即正式发行包。&lt;/li&gt;
+&lt;li&gt;debug: debug包，即测试包。&lt;/li&gt;
+&lt;li&gt;Channelname：根目录下 &lt;code&gt;shiyou&lt;/code&gt; 文件夹内一级文件夹名即为定义好的渠道名。&lt;/li&gt;
+&lt;li&gt;app: 指代 app-level 主工程目录的文件夹名（如不一样，以引擎命名代替）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;渠道调试&#34;&gt;渠道调试&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个没有对应的命令行指令&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;【Android Studio】&lt;em&gt;&lt;strong&gt;Build &amp;gt; Select Build Variant&lt;/strong&gt;&lt;/em&gt; 或 左侧面板 &lt;em&gt;&lt;strong&gt;Build Variants&lt;/strong&gt;&lt;/em&gt; 切换渠道，然后就可以进行渠道的代码调试。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/kssy%E6%B8%A0%E9%81%93%E5%88%87%E6%8D%A2.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;渠道出包&#34;&gt;渠道出包&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;手机连接电脑后，点击【Android Studio】&lt;code&gt;Run&lt;/code&gt;，即可自动编译当前渠道并安装。&lt;/li&gt;
+&lt;li&gt;通过【Android Studio】Build &amp;gt; Build Bundle(s) / APK(s)，编译出包。&lt;/li&gt;
+&lt;li&gt;命令行
+&lt;ul&gt;
+&lt;li&gt;编译：&lt;code&gt;gradlew app:assemble[Channelname]Release&lt;/code&gt;（驼峰规则）
+&lt;ul&gt;
+&lt;li&gt;示例：&lt;code&gt;gradlew app:assembleWebsite_enRelease&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安装：&lt;code&gt;adb install /path/*.apk&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;引擎IDE 出包，底层原理是一致的&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;多渠道出包&#34;&gt;多渠道出包&lt;/h1&gt;
+&lt;h2 id=&#34;命令行&#34;&gt;命令行&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gradlew omniChannelsBuild&lt;/code&gt;: OmniSDK 提供的多渠道编译指令集。&lt;/li&gt;
+&lt;li&gt;如需要定制出包规则，参考&lt;a href=&#34;#%E9%AB%98%E7%BA%A7%E6%89%A9%E5%B1%95&#34;&gt;高级扩展&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;图形界面&#34;&gt;图形界面&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;规划中：Java GUI，本质上还是命令行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;cps标签包&#34;&gt;CPS标签包&lt;/h1&gt;
+&lt;h2 id=&#34;功能说明&#34;&gt;功能说明&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;渠道包需要出 CPS 标签包时使用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;毫秒级&lt;/strong&gt;出CPS包，不受游戏包大小影响。&lt;/li&gt;
+&lt;li&gt;使用 OmniSDK 提供的 getCpsName 接口获取值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;strong&gt;root-level&lt;/strong&gt; 下的 &lt;code&gt;shiyou&lt;/code&gt; 目录，对应渠道文件名下，新建命名为 &lt;code&gt;cps&lt;/code&gt; 的文件。&lt;/li&gt;
+&lt;li&gt;根据&lt;a href=&#34;#%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99&#34;&gt;配置规则&lt;/a&gt;添加需要输出的渠道CPS标签包。&lt;/li&gt;
+&lt;li&gt;检查文件 &lt;em&gt;&lt;strong&gt;kssyOmniPlugin.gradle&lt;/strong&gt;&lt;/em&gt; 的 &lt;code&gt;skipCps&lt;/code&gt; 是不是为 &lt;code&gt;false&lt;/code&gt;（默认为&lt;code&gt;false&lt;/code&gt;）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;配置规则&#34;&gt;配置规则&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;标签包列表的文件名为 &lt;code&gt;cps&lt;/code&gt;，固定命名，没有文件后缀；&lt;/li&gt;
+&lt;li&gt;一行一个标签包；比如 &lt;code&gt;[cpsName,outAlias]&lt;/code&gt; 或 &lt;code&gt;[cpsName]&lt;/code&gt; 为一行；&lt;/li&gt;
+&lt;li&gt;标签包标签（cpsName）命名规则：
+&lt;ol&gt;
+&lt;li&gt;英文、数字、下划线；&lt;/li&gt;
+&lt;li&gt;整个文件禁止空格或空格行。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;标签包产物命名规则为：&lt;code&gt;cps-[cpsName]-[channelName]-**.apk&lt;/code&gt;；如果配置别名字段 &lt;code&gt;outAlias&lt;/code&gt;，则是 &lt;code&gt;outAlias.apk&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;不配置 &lt;code&gt;cps&lt;/code&gt; 文件时，不出标签包。&lt;/li&gt;
+&lt;li&gt;参考文件 &lt;a href=&#34;../res/cps&#34;&gt;cps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;常用指令&#34;&gt;常用指令&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令名&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;产物路径&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;gradlew bulid&lt;/td&gt;
+&lt;td&gt;执行所有Task，包含debug、release；如果有多个渠道也会同时编译&lt;/td&gt;
+&lt;td&gt;app-level/build/outputs/apk&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gradlew app:assemble[Channelname]Release&lt;/td&gt;
+&lt;td&gt;指定编译某个渠道的release包&lt;/td&gt;
+&lt;td&gt;同上&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gradlew app:assemble[Channelname]Debug&lt;/td&gt;
+&lt;td&gt;指定编译某个渠道的debug包&lt;/td&gt;
+&lt;td&gt;同上&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gradlew omniChannelsBuild&lt;/td&gt;
+&lt;td&gt;OmniSDK 提供的多渠道编译指令集&lt;/td&gt;
+&lt;td&gt;默认根目录的 channels-output 下&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gradlew -PisDebugType=true -PskipCpsBuild=false omniChannelsBuild&lt;/td&gt;
+&lt;td&gt;编译渠道debug包并出相应渠道的cps标签包&lt;/td&gt;
+&lt;td&gt;默认根目录的 channels-output 下&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;高级扩展&#34;&gt;高级扩展&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../doc/AdvancedCompilation.md&#34;&gt;OmniSDK 编译功能高级扩展&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;手动编译配置&#34;&gt;手动编译配置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;不建议。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../doc/%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E9%85%8D%E7%BD%AE.md&#34;&gt;手动编译配置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 特殊渠道列表</title>
+      <link>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/%E7%89%B9%E6%AE%8A%E6%B8%A0%E9%81%93%E5%88%97%E8%A1%A8.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/android-client/omnisdk-android-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/%E7%89%B9%E6%AE%8A%E6%B8%A0%E9%81%93%E5%88%97%E8%A1%A8.html</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;说明&#34;&gt;说明&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;如果游戏未接入下列特殊渠道，可以忽略本文档。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;特殊渠道列表&#34;&gt;特殊渠道列表&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;渠道名&lt;/th&gt;
+&lt;th&gt;渠道唯一标识&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;魅拓&lt;/td&gt;
+&lt;td&gt;meituo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;海南澎湃互动&lt;/td&gt;
+&lt;td&gt;pphd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;解决方案&#34;&gt;解决方案&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将游戏的 Application，改为继承 &lt;strong&gt;OmniApplication&lt;/strong&gt;，代码如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;com.kingsoft.shiyou.omnisdk.project.OmniApplication&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;GameApplication&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OmniApplication&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;   
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;确认在 &lt;code&gt;shiyou/channel/&lt;/code&gt; 即上述对应渠道下，是否有 &lt;code&gt;OmniApplication.kt&lt;/code&gt; 文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其他按正常的接入流程，编译时自动替换为渠道所需要的 Application。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
